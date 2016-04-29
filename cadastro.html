@@ -1,0 +1,50 @@
+<html>
+	<head>
+		<header class="cabecalho">
+		<nav id="nav">
+			<ul id="menuu">
+				<li id="menu" class="logo"><a id="page_inicial.html" href="page_inicial.php">Home</a></li>
+				<li id="menu"><a id="cadastro" href="cadastro.html">Cadastro</a></li>
+				<li id="menu"><a id="cadastro" href="login.html">Login</a></li>
+				<li id="menu"><a id="cadastro" href="tdmgames.html">Lista de games</a></li>
+				<li id="menu"><a id="cadastro" href="cadastro_games.html">Cadastro games</a></li>
+				<li id="menu" class="cons"><a id="cadastro" href="page_inicial.html">Consultas</a>
+				<ul>
+					<li class="sub"><a href="consultar_games_pornome.html">Por nome</a></li>
+					<li class="sub"><a href="consultar_game_porvalor.html">Por valor</a></li>
+					<li class="sub"><a href="tdgames.php">Geral</a></li>
+				</ul></li>	
+			</ul>
+			<form method="post" action="consultar_game_pornome.php">
+				<input name="nomegame" id="pesquisa" type="text" placeholder="Pesquisar" required="">
+				<input id="buscar" type="submit" value="">
+			</form>
+		</nav>
+		<img src="gamestop.png"/>
+		<fieldset class="login">
+			<form method='post' action='login.php'>
+				<span><b>Login</b></span></br>
+				</br><input id='login' type='text' name='usuario' required=''placeholder='Usuário'/></br></br>
+				<input id='login'type='password' name='senha' required='' placeholder='Senha'/></br>
+				</br><input id='login' type='submit' value='Entrar'/>
+				&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href='cadastro.html'>Cadastro</a>
+			</form> 
+		</fieldset>	
+		</header>	
+		<meta charset="UTF-8"/>
+		<title>Cadastro</title>
+		<link rel="stylesheet" type="text/css" href="estilo.css">
+	</head>
+	<body>
+		<fieldset>
+			<legend><h1>Cadastro</h1></legend>	
+			<form method="post" action="cadastro.php">
+				Email: </br><input type="email" name="email" required=""/></br>
+				Usuario: </br><input type="text" name="usuario" required=""/></br>
+				Senha: </br><input type="password" name="senha" required=""/></br>
+				</br><input type="submit" value="Cadastrar"/>
+			</form>
+			<font color="red"><b>Após a efetuação do cadastro uma mensagem será enviada para seu e-mail.</b></font>
+		</fieldset>
+	</body>
+</html>

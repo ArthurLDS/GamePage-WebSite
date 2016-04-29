@@ -1,0 +1,45 @@
+<html>
+	<head>
+		<meta charset="UTF-8"/>
+		<link rel="stylesheet" type="text/css" href="estilo.css">
+		<header class="cabecalho">
+		<nav id="nav">
+			<ul id="menuu">
+				<li id="menu" class="logo"><a id="page_inicial.html" href="#">Home</a></li>
+				<li id="menu"><a id="cadastro" href="cadastro.html">Cadastro</a></li>
+				<li id="menu"><a id="cadastro" href="login.html">Login</a></li>
+				<li id="menu"><a id="cadastro" href="tdmgames.html">Lista de games</a></li>
+				<li id="menu" class="cons"><a id="cadastro" href="page_inicial.html">Consultas</a>
+				<ul>
+						<li class="sub"><a href="#">Por nome</a></li>
+						<li class="sub"><a href="#">Por valor</a></li>
+						<li class="sub"><a href="#">Todos os games</a></li>
+				</ul></li>	
+				<li id="menu"><a id="cadastro" href="#.html">Sobre o site</a></li>
+			</ul>
+		</nav>
+		<meta charset="UTF-8">
+		
+		<img src="Logo_withcopy.png"/>
+		<fieldset class="login">
+			<form method='post' action='login.php'>
+				<span><b>Login</b></span></br>
+				</br><input id='login' type='text' name='usuario' required=''placeholder='Usuário'/></br></br>
+				<input id='login'type='password' name='senha' required='' placeholder='Senha'/></br>
+				</br><input id='login' type='submit' value='Entrar'/>
+				&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href='cadastro.html'>Cadastro</a>
+			</form> 
+		</fieldset>	
+		</header>			
+		<center></br><h1>Consulta de games por Valor</h1></center>
+	</head>
+	<body>
+		<form method="post" action="consultar_game_porvalor.php"/>
+			<center>Preço abaixo de: <input type="number" name="valor" required=""/></br><center>
+			<center></br><button type="submit">Consultar</button><center>
+		</form>
+	<footer>
+		<center>Developed by Arthur Lima de Souza | march 2016</center>
+	</footer>		
+	</body>
+</html>
