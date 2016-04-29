@@ -20,7 +20,7 @@ $mail->SMTPAuth = true;
 $mail->Username = 'grupoalgames@gmail.com';
  
 // Senha da conta
-$mail->Password = '123456AL';
+$mail->Password = 'mypassword';
  
 // Tipo de encriptação que será usado na conexão SMTP
 $mail->SMTPSecure = 'ssl';
